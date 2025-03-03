@@ -1,22 +1,12 @@
-class Solution(object):
-    def increasingTriplet(self, nums):
-        """
-        :type nums: List[int]
-        :rtype: bool
-        """
-        if len(nums) < 3:
-            return False
-        
-        first = float('inf')
-        second = float('inf')
-
-        for num in nums:
-            if num <= first:
-                first = num
-            elif num <= second:
-                second = num
+class Solution:
+    def increasingTriplet(self, nums: List[int]) -> bool:
+        f = float('inf')
+        s = float('inf')
+        for i in nums:
+            if i <= f:
+                f = i
+            elif i<= s:
+                s = i
             else:
                 return True
-
         return False
-    
