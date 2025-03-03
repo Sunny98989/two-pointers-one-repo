@@ -1,17 +1,14 @@
 class Solution:
     def productExceptSelf(self, nums: List[int]) -> List[int]:
-        n = len(nums)
-        result = [1] * n  # Initialize result array with 1s as multiplicative identity.
-        left_product = 1
-        right_product = 1
+        l = r = 1
+        product = [1]*len(nums)
 
-        for i in range(n):
-            result[i] *= left_product
-            left_product *= nums[i]  
+        for i in range(len(nums)):
+            product[i] *= l
+            l *= nums[i]
 
-        for i in range(n - 1, -1, -1):
-            result[i] *= right_product
-            right_product *= nums[i]
+        for i in range(len(nums)-1,-1,-1):
+            product[i]*=r
+            r *= nums[i]
 
-        return result
-
+        return product
