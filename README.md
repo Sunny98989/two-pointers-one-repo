@@ -7,7 +7,7 @@ This repository tracks my Data Structures and Algorithms (DSA) progression using
 The code here converges from two distinct sources:
 
 * **`/leetcode-sync`**: The automated pointer. This directory is managed by a GitHub Action that automatically fetches and commits my successful LeetCode submissions, preserving problem descriptions and performance metrics.
-* **`/manual-practice`**: The human pointer. This directory contains raw code, brute-force attempts, and custom data structure implementations tested locally before hitting the platform.
+* **`/casual-dsa`**: The human pointer. This directory contains raw code, brute-force attempts, and custom data structure implementations tested locally before hitting the platform.
 
 ## 🛠️ Stack & Automation
 * **Language:** Python mainly, java, js too {maybe}
