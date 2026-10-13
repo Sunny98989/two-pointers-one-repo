@@ -26,9 +26,25 @@ class Sol:
                     else:
                         print(1,end='')
             print()
+
+
+    def optimized_binary_angle(self,n): 
+        for i in range(1,n+1):
+            switch = 1
+            for j in range(1,i+1):
+                if i%2 != 0:
+                    print(switch,end='')
+                    switch = 1-switch
+                if i%2 == 0:
+                    switch = 1-switch
+                    print(switch,end='')
+            print()
+            
         
 n = int(input("IM INPUT: "))
 sol = Sol()
 sol.true_binary_angle(n)
 print("this is the line")
 sol.binary_angle(n)
+print("this is the line")
+sol.optimized_binary_angle(n)
