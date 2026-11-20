@@ -19,3 +19,16 @@ venv/
 env/
 .vscode/
 .idea/
+
+# C compiled files
+\*.o
+\*.out
+\*.a
+\*.dylib
+\*.so
+\*.dSYM/
+
+# Common executable naming convention
+/build/
+/bin/
+cbuild/
